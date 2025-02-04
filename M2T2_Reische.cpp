@@ -6,8 +6,10 @@
 #include <iomanip>
 using namespace std;
 int main() {
-//Give all the variables
-    string name = "Dalton Reische";
+//Get the users name and store in a variable
+    string name;     //Create the variable
+    cout << "Please enter your name: ";     //Ask for the users name
+    cin >> name;     //Store the users name in the variable
     int apples = 500;
     double pricePerApple = 0.15;
 // Calculate the total price of the apples
