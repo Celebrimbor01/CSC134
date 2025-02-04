@@ -8,8 +8,8 @@ using namespace std;
 int main() {
 //Give all the variables
     string name = "Dalton Reische";
-    int apples = 100;
-    double pricePerApple = 0.25;
+    int apples = 500;
+    double pricePerApple = 0.15;
 // Calculate the total price of the apples
     double totalPrice = apples * pricePerApple;
 // Print all the information about the apple farm
@@ -17,7 +17,8 @@ int main() {
     cout << "We have " << apples << " apples in stock\n";
     cout << "Apples are currently $" << pricePerApple << " each.\n";
     cout << fixed << setprecision(2);
-    cout << "If you want them all, the final price will be $" << totalPrice <<endl;
+    cout << "The final price will be $" << totalPrice <<endl;
+    cout << "Thanks for visiting my apple farm!\n";
 
     return 0;
 }
