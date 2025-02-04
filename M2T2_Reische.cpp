@@ -14,15 +14,19 @@ int main() {
     int card_packs;     //Create the variable
     cout << "How many packs of Pokemon cards do you own: ";     //Ask for the users number of packs
     cin >> card_packs;     //Store the value entered in the variable
-    double pricePerApple = 0.15;
-// Calculate the total price of the apples
-    double totalPrice = card_packs * pricePerApple;
-// Print all the information about the apple farm
+//Get the price each pack is being sold for by the user
+    double price_per_pack;     //Create the variable
+    cout << "How much does each pack cost: $";     //Ask for the price of each pack
+    cin >> price_per_pack;    //Store the price per pack in the variable
+// Calculate the total price for all the card packs
+    double totalPrice = card_packs * price_per_pack;
+// Print all the information about the card shop
     cout << "Welcome to " << name << "'s card shop!\n";
-    cout << "We have " << card_packs << " packs of Pokemon in stock\n";
-    cout << "Pokemon packs are currently $" << pricePerApple << " each.\n";
+    cout << "We have " << card_packs << " packs of Pokemon in stock.\n";
     cout << fixed << setprecision(2);
-    cout << "The final price will be $" << totalPrice <<endl;
+    cout << "Pokemon packs are currently $" << price_per_pack << " each.\n";
+    cout << fixed << setprecision(2);
+    cout << "The total price for all the packs will be $" << totalPrice <<endl;
     cout << "Thanks for visiting my card shop!\n";
 
     return 0;
