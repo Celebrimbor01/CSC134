@@ -11,5 +11,12 @@ int main() {
 //Give constants
     const double COST_PER_CUBIC_FOOT = 0.23;
     const double CHARGE_PER_CUBIC_FOOT = 0.5;
-
+//Give Variables
+    double length;
+    double width;
+    double height;
+    double volume;
+    double cost;
+    double charge;
+    double profit;
 }
