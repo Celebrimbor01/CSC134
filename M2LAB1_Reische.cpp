@@ -19,4 +19,14 @@ int main() {
     double cost;
     double charge;
     double profit;
+//Set the output formatting for numbers
+    cout << setprecision(2) << fixed <<showpoint;
+//Give the user a prompt for the crates dimensions
+    cout << "Enter the dimensions of the crate (in feet):\n";
+    cout << "Length: ";
+    cin >> length;
+    cout << "Width: ";
+    cin >> width;
+    cout << "Height: ";
+    cin >> height;
 }
