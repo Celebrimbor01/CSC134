@@ -29,4 +29,9 @@ int main() {
     cin >> width;
     cout << "Height: ";
     cin >> height;
+//Calculate the crate's volume, cost to produce, charge to the customer, and the profit
+    volume = length * width * height;
+    cost = volume * COST_PER_CUBIC_FOOT;
+    charge = volume * CHARGE_PER_CUBIC_FOOT;
+    profit = charge - cost;
 }
