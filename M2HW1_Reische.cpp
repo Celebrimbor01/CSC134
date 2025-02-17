@@ -95,6 +95,31 @@ int main() {
 
 //Question 3: This program will calculate how many slices of pizza are left at a party.
 
+//Constants
+    const int slices_per_person = 3;
+
+//Variables
+    double pizzas_ordered;
+    double slices_per_pizza;
+    double people_attending_party;
+    double total_slices;
+    double slices_eaten;
+    double slices_left;
+
+//Give this problem the "Question 3" label.
+    cout << "\n";
+    cout << "Question 3.\n";
+    cout << "\n";
+
+//Give the user a prompt for the pizza party details.
+    cout << "How many pizzas were ordered for the party: ";
+    cin >> pizzas_ordered;
+    cout << "How many slices would you like per pizza: ";
+    cin >> slices_per_pizza;
+    cout << "How many people will be attending the pizza party: ";
+    cin >> people_attending_party;
+
+//Calculate the total slices, slices eaten, and slices left.
 
 
 return 0;
