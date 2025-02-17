@@ -111,6 +111,9 @@ int main() {
     cout << "Question 3.\n";
     cout << "\n";
 
+//Set the output formatting for the numbers.
+    cout << setprecision(1) << fixed <<showpoint;
+
 //Give the user a prompt for the pizza party details.
     cout << "How many pizzas were ordered for the party: ";
     cin >> pizzas_ordered;
