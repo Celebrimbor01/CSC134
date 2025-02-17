@@ -19,5 +19,18 @@ int main() {
     double deposit_amount;
     double withdrawal_amount;
 
+//Give this problem the "Question 1" label.
+    cout << "Question 1.\n";
+    cout << "\n";
+
+//Give the user a prompt for their transaction details.
+    cout << "Please enter your name: ";
+    cin >> name;
+    cout << "Please enter the accounts current balance: $";
+    cin >> starting_balance;
+    cout << "Please enter the amount you wish to deposit: $";
+    cin >> deposit_amount;
+    cout << "Please enter the amount you wish to withdrawal: $";
+    cin >> withdrawal_amount;
 
 }
