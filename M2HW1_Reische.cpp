@@ -1,5 +1,5 @@
 //CSC 134
-//M2HW1 - 
+//M2HW1 - Gold
 //Dalton Reische
 //2/17/2025
 
@@ -132,8 +132,27 @@ int main() {
     cout << "Welcome to my pizza party!\n";
     cout << "I ordered " << pizzas_ordered << " pizzas for " << people_attending_party << " people.\n";
     cout << "If everybody eats " << slices_per_person << " slices then we should have " << slices_left << " slices left.\n";
-    cout << "Thank you for coming to my pizza party!";
+    cout << "Thank you for coming to my pizza party!\n";
 
+//Question 4: This program is a cheering program for a sports team.
+
+//Variables
+    string letsGo = "Let's go ";
+    string school = "FTCC";
+    string team = "Trojans";
+    string cheerOne = letsGo + school;
+    string cheerTwo = letsGo + team;
+
+//Give this problem the "Question 4" label.
+    cout << "\n";
+    cout << "Question 4.\n";
+    cout << "\n";
+
+//Display the cheer
+    cout << cheerOne << endl;
+    cout << cheerOne << endl;
+    cout << cheerOne << endl;
+    cout << cheerTwo << endl;
 
 return 0;
 
