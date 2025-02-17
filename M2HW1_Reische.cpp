@@ -25,6 +25,9 @@ int main() {
     cout << "Question 1.\n";
     cout << "\n";
 
+//Set the output formatting for the numbers.
+    cout << setprecision(2) << fixed <<showpoint;
+
 //Give the user a prompt for their transaction details.
     cout << "Please enter your name: ";
     cin >> name;
@@ -89,6 +92,10 @@ int main() {
     cout << "Cost to build: $" << cost << endl;
     cout << "Charge to customer: $" << charge << endl;
     cout << "Profit: $" << profit << endl;
+
+//Question 3: This program will calculate how many slices of pizza are left at a party.
+
+
 
 return 0;
 
