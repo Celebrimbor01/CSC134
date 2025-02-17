@@ -60,6 +60,11 @@ int main() {
     double charge;
     double profit;
 
+//Give this problem the "Question 2" label.
+    cout << "\n";
+    cout << "Question 2.\n";
+    cout << "\n";
+
 //Set the output formatting for the numbers.
     cout << setprecision(2) << fixed <<showpoint;
 
@@ -71,8 +76,19 @@ int main() {
     cin >> width;
     cout << "Height: ";
     cin >> height;
+    cout << "\n";
 
+//Calculate the crate's volume, cost to produce, charge to the customer, and the profit
+    volume = length * width * height;
+    cost = volume * cost_per_cubic_foot;
+    charge = volume * charge_per_cubic_foot;
+    profit = charge - cost;
 
+//Display the calculated data
+    cout << "The volume of the crate is " << volume << " cubic feet.\n";
+    cout << "Cost to build: $" << cost << endl;
+    cout << "Charge to customer: $" << charge << endl;
+    cout << "Profit: $" << profit << endl;
 
 return 0;
 
