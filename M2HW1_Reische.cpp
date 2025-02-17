@@ -118,8 +118,18 @@ int main() {
     cin >> slices_per_pizza;
     cout << "How many people will be attending the pizza party: ";
     cin >> people_attending_party;
+    cout << "\n";
 
 //Calculate the total slices, slices eaten, and slices left.
+    total_slices = pizzas_ordered * slices_per_pizza;
+    slices_eaten = people_attending_party * slices_per_person;
+    slices_left = total_slices - slices_eaten;
+
+//Display the data calculated for the pizza party.
+    cout << "Welcome to my pizza party!\n";
+    cout << "I ordered " << pizzas_ordered << " pizzas for " << people_attending_party << " people.\n";
+    cout << "If everybody eats " << slices_per_person << " slices then we should have " << slices_left << " slices left.\n";
+    cout << "Thank you for coming to my pizza party!";
 
 
 return 0;
