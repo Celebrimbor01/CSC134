@@ -45,6 +45,21 @@ int main() {
     cout << "Account number: " << account_number << endl;
     cout << "Account balance after withdrawal: $" << final_balance << endl;
 
+//Question 2: I will be modifying the code for M2LAB1 to meet the new cost conditions.
+
+//Constants
+    const double cost_per_cubic_foot = 0.3;
+    const double charge_per_cubic_foot = 0.52;
+
+//Variables
+    double length;
+    double width;
+    double height;
+    double volume;
+    double cost;
+    double charge;
+    double profit;
+
 return 0;
 
 }
