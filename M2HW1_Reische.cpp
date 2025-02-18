@@ -30,7 +30,7 @@ int main() {
 
 //Give the user a prompt for their transaction details.
     cout << "Please enter your name: ";
-    cin >> name;
+    getline(cin, name);
     cout << "Please enter the accounts current balance: $";
     cin >> starting_balance;
     cout << "Please enter the amount you wish to deposit: $";
