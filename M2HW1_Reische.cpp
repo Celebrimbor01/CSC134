@@ -26,7 +26,7 @@ int main() {
     cout << "\n";
 
 //Set the output formatting for the numbers.
-    cout << setprecision(2) << fixed <<showpoint;
+    cout << setprecision(2) << fixed;
 
 //Give the user a prompt for their transaction details.
     cout << "Please enter your name: ";
@@ -69,7 +69,7 @@ int main() {
     cout << "\n";
 
 //Set the output formatting for the numbers.
-    cout << setprecision(2) << fixed <<showpoint;
+    cout << setprecision(2) << fixed;
 
 //Give the user a prompt for the crates dimensions.
     cout << "Enter the dimensions of the crate (in feet):\n";
@@ -112,7 +112,7 @@ int main() {
     cout << "\n";
 
 //Set the output formatting for the numbers.
-    cout << setprecision(1) << fixed <<showpoint;
+    cout << setprecision(0) << fixed;
 
 //Give the user a prompt for the pizza party details.
     cout << "How many pizzas were ordered for the party: ";
