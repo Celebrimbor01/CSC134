@@ -41,6 +41,14 @@ int main() {
     else {
         eyes = "??"; }
 
+//Give a prompt asking for the characters mouth.
+        cout << "\nChoose your characters mouth:\n";
+        cout << "1. ___\n";
+        cout << "2. ◡\n";
+        cout << "3. ᴗ\n";
+        cout << "Enter the number of your choice: ";
+        cin >> mouth_choice
+
 
 
 
