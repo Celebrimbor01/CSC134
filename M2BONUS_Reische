@@ -24,7 +24,14 @@ int main() {
     getline (cin, character_name);
 
 //Give a prompt asking for the characters eyes.
-    
+    cout << "\nChoose your characters eyes:\n";
+    cout << "1. O O\n";
+    cout << "2. ^ ^\n";
+    cout << "3. • •\n";
+    cout << "Enter the number of your choice: ";
+    cin >> eye_choice;
+
+
 
 
 }
