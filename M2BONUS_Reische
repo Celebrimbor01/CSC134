@@ -67,5 +67,6 @@ int main() {
 //Display a creative message.
     cout << "What a unique character! " << character_name << " is ready to embark on a new adventure.\n";
 
+return 0;
 
 }
