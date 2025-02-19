@@ -47,7 +47,17 @@ int main() {
         cout << "2. ◡\n";
         cout << "3. ᴗ\n";
         cout << "Enter the number of your choice: ";
-        cin >> mouth_choice
+        cin >> mouth_choice;
+
+//Assign the characters mouth based on users input.
+    if (mouth_choice == 1) {
+        mouth = "___"; }
+    else if (mouth_choice == 2) {
+        mouth = "◡"; }
+    else if (mouth_choice == 3) {
+        mouth = "ᴗ"; }
+    else {
+     mouth = "??"; }
 
 
 
