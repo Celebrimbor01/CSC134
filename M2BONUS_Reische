@@ -59,7 +59,13 @@ int main() {
     else {
      mouth = "??"; }
 
+//Display the final character.
+    cout << "\nMeet " << character_name << "!\n\n";
+    cout << " " << eyes << "\n";
+    cout << " " << mouth << "\n\n";
 
+//Display a creative message.
+    cout << "What a unique character! " << character_name << " is ready to embark on a new adventure.\n";
 
 
 }
