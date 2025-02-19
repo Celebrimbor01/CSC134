@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "iomanip": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "m2bonus_reische": "cpp"
     }
 }

@@ -31,6 +31,16 @@ int main() {
     cout << "Enter the number of your choice: ";
     cin >> eye_choice;
 
+//Assign the characters eyes based on users input.
+    if (eye_choice == 1) {
+        eyes = "O O"; }
+    else if (eye_choice == 2) {
+        eyes = "^ ^"; }
+    else if (eye_choice == 3) {
+        eyes = "• •"; }
+    else {
+        eyes = "??"; }
+
 
 
 
