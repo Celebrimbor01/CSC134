@@ -32,4 +32,6 @@ int main() {
     cout << "The area of rectangle one is: " << area_one << " sq ft\n";
     cout << "The area of rectangle two is: " << area_two << " sq ft\n";
 
+return 0;
+
 }
