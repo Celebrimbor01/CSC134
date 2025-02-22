@@ -44,6 +44,6 @@ int main() {
         cout << "They are the same size.\n";
     }
 
-
+return 0;
 
 }
