@@ -17,6 +17,13 @@ using namespace std;
 //Begin main function.
 int main() {
 
+//Variables
+    int choice;
+
+//Prompt the user for their choice of car.
+    cout << "Welcome to this years annual drag race!\n";
+    cout << "Please type 1, 2, or 3 to choose your car: ";
+    cin >> choice;
 
 
 }
