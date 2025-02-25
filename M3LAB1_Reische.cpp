@@ -8,3 +8,15 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+//Declare additional functions.
+    void chooseCar1();
+    void chooseCar2();
+    void chooseCar3();
+
+//Begin main function.
+int main() {
+
+
+
+}
