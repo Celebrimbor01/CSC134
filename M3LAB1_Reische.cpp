@@ -39,8 +39,24 @@ int main() {
         cout << "I'm sorry, that is not a valid choice.\n";
     }
 
-    cout << "Thank you for participating in this years race!";
+    cout << "\nThank you for participating in this years race!\n";
 
 return 0;
 
 }
+
+//Define additional functions.
+    void chooseCar1() {
+        cout << "\nYou chose car 1\n";
+        cout << "You lose...\n";
+    }
+
+    void chooseCar2() {
+        cout << "\nYou chose car 2\n";
+        cout << "You win!\n";
+    }
+
+    void chooseCar3() {
+        cout << "\nYou chose car 3\n";
+        cout << "You tied!\n";
+    }
