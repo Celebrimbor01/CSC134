@@ -25,5 +25,22 @@ int main() {
     cout << "Please type 1, 2, or 3 to choose your car: ";
     cin >> choice;
 
+//Determine what car was chosen.
+    if (choice == 1) {
+        chooseCar1();
+    }
+    else if (choice == 2) {
+        chooseCar2();
+    }
+    else if (choice == 3) {
+        chooseCar3();
+    }
+    else {
+        cout << "I'm sorry, that is not a valid choice.\n";
+    }
+
+    cout << "Thank you for participating in this years race!";
+
+return 0;
 
 }
