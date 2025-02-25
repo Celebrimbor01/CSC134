@@ -36,7 +36,7 @@ int main() {
         chooseCar3();
     }
     else {
-        cout << "I'm sorry, that is not a valid choice.\n";
+        cout << "\nI'm sorry, that is not a valid choice.\n";
     }
 
     cout << "\nThank you for participating in this years race!\n";
