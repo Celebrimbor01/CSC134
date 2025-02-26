@@ -13,6 +13,13 @@ using namespace std;
     int main() {
 
 //Variables
+    int numericalGrade;
 
+//Prompt the user for the numerical grade.
+    cout << "Please enter your numerical grade: ";
+    cin >> numericalGrade;
+
+//Convert the numerical grade into a letter grade.
+    
 
 }
