@@ -14,6 +14,7 @@ using namespace std;
 
 //Variables
     int numericalGrade;
+    char letterGrade;
 
 //Prompt the user for the numerical grade.
     cout << "Please enter your numerical grade: ";
@@ -21,23 +22,27 @@ using namespace std;
 
 //Convert the numerical grade into a letter grade.
     if (numericalGrade >= 90 && numericalGrade <= 100) {
-        cout << "\nYour letter grade is: A\n";
+        letterGrade = 'A';
     }
     else if (numericalGrade >= 80 && numericalGrade <= 89) {
-        cout << "\nYour letter grade is: B\n";
+        letterGrade = 'B';
     }
     else if (numericalGrade >= 70 && numericalGrade <= 79) {
-        cout << "\nYour letter grade is: C\n";
+        letterGrade = 'C';
     }
     else if (numericalGrade >= 60 && numericalGrade <= 69) {
-        cout << "\nYour letter grade is: D\n";
+        letterGrade = 'D';
     }
     else if (numericalGrade >= 0 && numericalGrade <= 59) {
-        cout << "\nYour letter grade is: F\n";
+        letterGrade = 'F';
     }
     else {
         cout << "\nInvalid grade entered.\n";
+        return 1;
     }
+
+//Display the letter grade.
+    cout << "\nYour letter grade is: " << letterGrade << endl;
 
 return 0;
 

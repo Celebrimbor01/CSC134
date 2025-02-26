@@ -2,6 +2,7 @@
     "files.associations": {
         "iomanip": "cpp",
         "ostream": "cpp",
-        "m2bonus_reische": "cpp"
+        "m2bonus_reische": "cpp",
+        "iostream": "cpp"
     }
 }
