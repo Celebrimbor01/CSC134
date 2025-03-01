@@ -33,6 +33,22 @@ int main() {
         cout << "\nIf you're not sure... that's OK.\n";
     }
 
+//Question 2: This program will simulate a receipt calculator.
+
+//Constants
+    const double tipPercent = 0.15;
+    const double salestaxPercent = 6.75;
+
+//Variables
+    string name;
+    string orderType;
+    double mealPrice;
+    double dineinTip;
+    double salestax;
+
+//
+    
+
 return 0;
 
 }
