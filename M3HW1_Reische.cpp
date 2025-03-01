@@ -5,6 +5,8 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main() {
@@ -116,8 +118,36 @@ cout << "\nQuestion 2.\n";
     else if (choice == "left") {
         cout << "\nYou take an arrow to the knee... Game over!\n";
     }
-    
 
+//Question 4: This is a math practice program.
+
+//Variables
+    int userAnswer;
+    int correctAnswer;
+
+//Generate two random single digit numbers.
+    srand(time(0));
+    int number1 = rand() % 10;
+    int number2 = rand() % 10;
+
+//Give this problem the "Question 3" label.
+    cout << "\nQuestion 3.\n";
+
+//Display the random numbers and as the user to answer the addition problem.
+    cout << "\nWhat is " << number1 << " plus " << number2 << "? ";
+    cin >> userAnswer;
+
+//Calculate the correct answer.
+    correctAnswer = number1 + number2;
+
+//Determine if the user was right or wrong.
+    if (userAnswer == correctAnswer) {
+        cout << "\nCorrect! Well done.\n";
+    }
+    else {
+        cout << "\nIncorrect. The correct answer is " << correctAnswer << endl;
+    }
+    
 return 0;
 
 }
