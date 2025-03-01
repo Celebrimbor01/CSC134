@@ -49,6 +49,9 @@ int main() {
 //Give this problem the "Question 2" label.
 cout << "\nQuestion 2.\n";
 
+//Set the output formatting for the numbers.
+    cout << setprecision(2) << fixed;
+
 //Prompt the user for their meal information.
     cout << "\nWelcome to my receipt calculator!\n";
     cout << "Please enter your last name: ";
