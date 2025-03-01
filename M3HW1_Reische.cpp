@@ -82,6 +82,40 @@ cout << "\nQuestion 2.\n";
     cout << "Tip: $" << dineinTip << endl;
     cout << "Total: $" << finalPrice << endl;
 
+//Question 3: This program is a simple choose your own adventure game.
+
+//variables
+    string choice;
+
+//Give this problem the "Question 3" label.
+    cout << "\nQuestion 3.\n";
+
+//Welcome the user and prompt the user for their choices.
+    cout << "\nWelcome to my adventure game!\n";
+    cout << "You are standing at a crossroad. Where do you want to go? (left/right): ";
+    cin >> choice;
+
+    if (choice == "right") {
+        cout << "\nYou encounter a dragon! What do you do? (run/fight): ";
+        cin >> choice;
+    }
+        if (choice == "fight") {
+            cout << "\nThe dragon defeats you! Game over.\n";
+        }
+        else if (choice == "run") {
+            cout << "\nYou safely run to a nearby cave, you find a treasure chest!\n";
+            cout << "What do you do? (open/ignore): ";
+            cin >> choice;
+        }
+            if (choice == "open") {
+                cout << "\nYou find the crown and save the world!\n";
+            }
+            else if (choice == "ignore") {
+                cout << "\nYou walk away and leave the world to it's doom...\n";
+            }
+    else if (choice == "left") {
+        cout << "\nYou take an arrow to the knee... Game over!\n";
+    }
     
 
 return 0;
