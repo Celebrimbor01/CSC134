@@ -15,10 +15,9 @@ int main() {
 
 //Give this problem the "Question 1" label.
     cout << "Question 1.\n";
-    cout << "\n";
 
 //Prompt the user asking if they like the chat bot.
-    cout << "Hello, I'm a C++ chat bot!\n";
+    cout << "\nHello, I'm a C++ chat bot!\n";
     cout << "Do you like me? Please type yes or no.\n";
     cin >> answer;
 
@@ -41,12 +40,25 @@ int main() {
 
 //Variables
     string name;
-    string orderType;
+    int orderType;
     double mealPrice;
     double dineinTip;
     double salestax;
 
-//
+//Give this problem the "Question 2" label.
+cout << "\nQuestion 2.\n";
+
+//Prompt the user for their meal information.
+    cout << "\nWelcome to my receipt calculator!\n";
+    cout << "Please enter your name: ";
+    getline (cin, name);
+    cout << "Please enter the price of the meal: ";
+    cin >> mealPrice;
+    cout << "Please enter 1 if the order is dine in, 2 if it is to go: ";
+    cin >> orderType;
+
+//Determine if dine in tax needs to be added.
+    
     
 
 return 0;
