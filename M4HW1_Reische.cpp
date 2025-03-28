@@ -12,10 +12,15 @@ int main () {
 
 //Variables
     int number = 1;
+    int user_number;
+
+//Prompt the user to enter a number from 1 to 12
+    cout << "Please enter a number from 1 to 12: ";
+    cin >> user_number;
 
 //While loop to print the 5 times table
     while (number <= 12) {
-        cout << "5 times " << number << " is " << 5 * number << ".\n";
+        cout << user_number << " times " << number << " is " << user_number * number << ".\n";
         number++;
     }
 
