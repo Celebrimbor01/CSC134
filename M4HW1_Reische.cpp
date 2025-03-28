@@ -10,6 +10,15 @@ using namespace std;
 
 int main () {
 
+//Variables
+    int number = 1;
 
-    
+//While loop to print the 5 times table
+    while (number <= 12) {
+        cout << "5 times " << number << " is " << 5 * number << ".\n";
+        number++;
+    }
+
+return 0;
+
 }
