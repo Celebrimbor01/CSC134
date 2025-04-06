@@ -7,3 +7,16 @@
 using namespace std;
 
 //Write one void function, and one value returning function, and call them both in main().
+
+//Declare functions
+void sayHello();
+int giveAnswer();
+int doubleNumber();
+
+
+
+int main() {
+
+
+
+}
