@@ -17,14 +17,26 @@ int doubleNumber(int num);
 
 int main() {
 
+//sayHello function
+    cout << "A message from main(): ";
+    sayHello();
 
+//giveAnswer function
+    int myAnswer = giveAnswer();
+    cout << "\nThe answer is: " << myAnswer << endl;
+
+//doubleNumber function
+    int twoTimes = doubleNumber(17);
+    cout << "\nDouble the previous answer is: " << twoTimes << endl;
+
+return 0;
 
 }
 
 //Define the functions
 
 void sayHello() {
-    cout << "Hello from the void\n";
+    cout << "The void calls to you..\n";
     return;
 }
 int giveAnswer() {
