@@ -11,12 +11,26 @@ using namespace std;
 //Declare functions
 void sayHello();
 int giveAnswer();
-int doubleNumber();
+int doubleNumber(int num);
 
-
+//Call the functions in main
 
 int main() {
 
 
 
+}
+
+//Define the functions
+
+void sayHello() {
+    cout << "Hello from the void\n";
+    return;
+}
+int giveAnswer() {
+    return 17;
+}
+int doubleNumber(int num) {
+    int newNum = num * 2;
+    return newNum;
 }
