@@ -9,16 +9,14 @@ using namespace std;
 //This program will calculate the area of a rectangle
 
 //Declare functions
-int getLength();
-int getWidth();
-int getArea();
-int displayData();
+double getLength();
+double getWidth();
+double getArea(double length, double width);
+void displayData(double length, double width, double area);
 
 int main () {
 
-// This program calculates the area of a rectangle.
-// TODO: fix any syntax errors
-	
+//Variables
     double length;    // The rectangle's length
     double width;     // The rectangle's width
     double area;      // The rectangle's area
@@ -30,7 +28,7 @@ int main () {
     width = getWidth();
 
 // Get the rectangle's area.
-    area = getArea();
+    area = getArea(length, width);
 
 // Display the rectangle's data.
     displayData(length, width, area);
@@ -39,18 +37,27 @@ return 0;
 }
 
 //Define functions
-int getLength(); {
-    
+double getLength() {
+    double length;
+    cout << "Please enter the length of the rectangle: ";
+    cin >> length;
+    return length;
 }
 
-int getWidth(); {
-
+double getWidth() {
+    double width;
+    cout << "Please enter the width of the rectangle: ";
+    cin>> width;
+    return width;
 }
 
-int getArea(); {
-
+double getArea(double length, double width) {
+    return length * width;
 }
 
-int displayData(); {
-
+void displayData(double length, double width, double area) {
+    cout << "\nHere is the data of the rectangle you entered:\n";
+    cout << "Length: " << length << endl;
+    cout << "Width: " << width << endl;
+    cout << "Area: " << area << endl;
 }
