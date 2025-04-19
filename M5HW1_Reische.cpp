@@ -8,6 +8,7 @@
 using namespace std;
 
 //Declare functions
+string numbertoRoman(int num);
 
 
 
@@ -70,5 +71,41 @@ int main() {
 //Display the "blocks" volume.
     cout << "\nThe volume based on the numbers you have input is: " << blockVolume << " cubic inches.\n";
 
+//Question 3: Display the roman numeral for a number input by the user.
+
+//variables
+    int number;
+
+//Give this problem the "Question 3" label.
+    cout << "\nQuestion 3.\n";
+
+//Prompt the user for a number to be converted.
+    cout << "\nEnter a number (1-10): ";
+    cin >> number;
+    cout << "The Roman numeral version of " << number << " is " << numbertoRoman(number) << ".\n";
+
+//Question 4: This program will display a geometry calculator menu.
+
+
 return 0;
+}
+
+//Define functions
+
+string numbertoRoman(int num) {
+    string roman;
+    switch (num) {
+        case 1: roman = "I"; break;
+        case 2: roman = "II"; break;
+        case 3: roman = "III"; break;
+        case 4: roman = "IV"; break;
+        case 5: roman = "V"; break;
+        case 6: roman = "VI"; break;
+        case 7: roman = "VII"; break;
+        case 8: roman = "VIII"; break;
+        case 9: roman = "IX"; break;
+        case 10: roman = "X"; break;
+        default: roman = "Invalid number"; break;
+    }
+    return roman;
 }
