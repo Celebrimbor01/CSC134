@@ -47,5 +47,28 @@ int main() {
 //Display the average rainfall for all three months.
     cout << "\nThe average rainfall for " << monthOne << ", " << monthTwo << ", and " << monthThree << " is " << rainAverage << " inches.\n";
 
+//Question 2: This program will calculate the volume of a three dimensional hyperrectangle.
+
+//Variables
+    double blockWidth, blockLength, blockHeight, blockVolume;
+
+//Give this problem the "Question 2" label.
+    cout << "\nQuestion 2.\n";
+
+//Prompt the user for the width, length, and height of the "block".
+
+    cout << "\nEnter the width: ";
+    cin >> blockWidth;
+    cout << "Enter the length: ";
+    cin >> blockLength;
+    cout << "Enter the height: ";
+    cin >> blockHeight;
+
+//Calculate the volume of the "block".
+    blockVolume = blockWidth * blockLength * blockHeight;
+
+//Display the "blocks" volume.
+    cout << "\nThe volume based on the numbers you have input is: " << blockVolume << " cubic inches.\n";
+
 return 0;
 }
