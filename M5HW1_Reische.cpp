@@ -89,8 +89,32 @@ int main() {
 
 //Question 4: This program will display a geometry calculator menu.
 
+//Give this problem the "Question 4" label.
+    cout << "\nQuestion 4.\n";
+
 geometryMenu();
 
+//Question 5: This program is a distance traveled calculator
+
+//variables
+    int speed, hours;
+
+//Give this problem the "Question 5" label.
+    cout << "\nQuestion 5.\n";
+
+//Prompt the user for the speed and the hours traveled.
+    cout << "\nWhat is the speed of the vehicle in MPH? ";
+    cin >> speed;
+    cout << "How many hours has it traveled? ";
+    cin >> hours;
+    cout << "\nHour   Distance Traveled\n";
+    cout << "--------------------------------\n";
+
+//Loop to calculate and display the distance for each hour traveled.
+    for (int hour = 1; hour <= hours; ++hour) {
+        int distance = speed * hour;
+        cout << hour << "\t\t" << distance << endl;
+    }
 
 return 0;
 }
@@ -117,7 +141,6 @@ string numbertoRoman(int num) {
 
 void geometryMenu() {
 
-    // Write a simple menu that lets the user choose 1,2, or 3, or 4 to quit.
     cout << "\nGeometry Calculator\n";
     cout << "1. Calculate the Area of a Circle\n";
     cout << "2. Calculate the Area of a Rectangle\n";
@@ -131,7 +154,7 @@ void geometryMenu() {
         double radius;
         cout << "\nEnter the radius of the circle: ";
         cin >> radius;
-        cout << "The area of the circle is: " << circleArea(radius) << endl;
+        cout << "\nThe area of the circle is: " << circleArea(radius) << endl;
     } else if (2 == choice) {
         double length;
         double width;
@@ -139,7 +162,7 @@ void geometryMenu() {
         cin >> length;
         cout << "Enter the width of the rectangle: ";
         cin >> width;
-        cout << "The area of the rectangle is: " << rectangleArea(length, width) << endl;
+        cout << "\nThe area of the rectangle is: " << rectangleArea(length, width) << endl;
     } else if (3 == choice) {
         double base;
         double height;
@@ -147,10 +170,14 @@ void geometryMenu() {
         cin >> base;
         cout << "Enter the height of the triangle: ";
         cin >> height;
-        cout << "The area of the triangle is: " << triangleArea(base, height) << endl;;
+        cout << "\nThe area of the triangle is: " << triangleArea(base, height) << endl;;
     } else if (4 == choice) {
         cout << "\nOk, quitting calculator\n";
         return; // go back to main()
+  } else {
+    cout << "\nThe valid choices are 1 through 4, please try again.\n";
+    cin.ignore(); // clear the user input
+    geometryMenu();  // try again
   }
 }
 
