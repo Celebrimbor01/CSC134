@@ -10,116 +10,80 @@ using namespace std;
 
 //Declare functions
 string numbertoRoman(int num);
+void mainMenu();
+void questionOne();
+void questionTwo();
+void questionThree();
+void questionFour();
+void questionFive();
 void geometryMenu();
 double circleArea(double radius);
 double rectangleArea(double length, double width);
 double triangleArea(double base, double height);
 
 int main() {
-//Question 1: This program will calculate the average rainfall for three months.
 
-//variables
-    string monthOne, monthTwo, monthThree;
-    double rainOne, rainTwo, rainThree;
-    double rainTotal;
-    double rainAverage;
+//Set the output formatting for all the numbers.
+cout << setprecision(2) << fixed;
 
-//Give this problem the "Question 1" label.
-    cout << "Question 1.\n";
+mainMenu();
 
-//Set the output formatting for the numbers.
-    cout << setprecision(2) << fixed;
-
-//Prompt the user for the months and rainfall totals
-    cout << "\nEnter month: ";
-    cin >> monthOne;
-    cout << "Enter rainfall for " << monthOne << ": ";
-    cin >> rainOne;
-    cout << "Enter month: ";
-    cin >> monthTwo;
-    cout << "Enter rainfall for " << monthTwo << ": ";
-    cin >> rainTwo;
-    cout << "Enter month: ";
-    cin >> monthThree;
-    cout << "Enter rainfall for " << monthThree << ": ";
-    cin >> rainThree;
-
-//Calculate the average rainfall for all three months.
-    rainTotal = rainOne + rainTwo + rainThree;
-    rainAverage =  rainTotal / 3.0;
-
-//Display the average rainfall for all three months.
-    cout << "\nThe average rainfall for " << monthOne << ", " << monthTwo << ", and " << monthThree << " is " << rainAverage << " inches.\n";
-
-//Question 2: This program will calculate the volume of a three dimensional hyperrectangle.
-
-//Variables
-    double blockWidth, blockLength, blockHeight, blockVolume;
-
-//Give this problem the "Question 2" label.
-    cout << "\nQuestion 2.\n";
-
-//Prompt the user for the width, length, and height of the "block".
-
-    cout << "\nEnter the width: ";
-    cin >> blockWidth;
-    cout << "Enter the length: ";
-    cin >> blockLength;
-    cout << "Enter the height: ";
-    cin >> blockHeight;
-
-//Calculate the volume of the "block".
-    blockVolume = blockWidth * blockLength * blockHeight;
-
-//Display the "blocks" volume.
-    cout << "\nThe volume based on the numbers you have input is: " << blockVolume << " cubic inches.\n";
-
-//Question 3: Display the roman numeral for a number input by the user.
-
-//variables
-    int number;
-
-//Give this problem the "Question 3" label.
-    cout << "\nQuestion 3.\n";
-
-//Prompt the user for a number to be converted.
-    cout << "\nEnter a number (1-10): ";
-    cin >> number;
-    cout << "The Roman numeral version of " << number << " is " << numbertoRoman(number) << ".\n";
-
-//Question 4: This program will display a geometry calculator menu.
-
-//Give this problem the "Question 4" label.
-    cout << "\nQuestion 4.\n";
-
-geometryMenu();
-
-//Question 5: This program is a distance traveled calculator
-
-//variables
-    int speed, hours;
-
-//Give this problem the "Question 5" label.
-    cout << "\nQuestion 5.\n";
-
-//Prompt the user for the speed and the hours traveled.
-    cout << "\nWhat is the speed of the vehicle in MPH? ";
-    cin >> speed;
-    cout << "How many hours has it traveled? ";
-    cin >> hours;
-    cout << "\nHour   Distance Traveled\n";
-    cout << "--------------------------------\n";
-
-//Loop to calculate and display the distance for each hour traveled.
-    for (int hour = 1; hour <= hours; ++hour) {
-        int distance = speed * hour;
-        cout << hour << "\t\t" << distance << endl;
-    }
 
 return 0;
 }
 
 //Define functions
+
+void mainMenu() {
+    int choice;
+
+    do {
+       
+        cout << "\n*Main Menu*\n";
+        cout << "\n1. Three month average rainfall calculator\n";
+        cout << "2. Volume of a block calculator\n";
+        cout << "3. Number to Roman numeral translator\n";
+        cout << "4. Geometry Calculator\n";
+        cout << "5. Distance Calculator\n";
+        cout << "6. [Quit]\n";
+        cout << "\nPlease choose a program: ";
+        cin >> choice;
+
+        
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(); 
+            cout << "\nInvalid input. Please enter a number between 1 and 6.\n";
+            continue;
+        }
+
+        
+        switch (choice) {
+            case 1:
+                questionOne();
+                break;
+            case 2:
+                questionTwo();
+                break;
+            case 3:
+                questionThree();
+                break;
+            case 4:
+                questionFour();
+                break;
+            case 5:
+                questionFive();
+                break;
+            case 6:
+                cout << "\nOk, quitting program. Goodbye!\n";
+                break;
+            default:
+                cout << "\nThat's not a valid choice, please try again.\n";
+                break;
+        }
+    } while (choice != 6);
+}
+
 
 string numbertoRoman(int num) {
     string roman;
@@ -181,14 +145,121 @@ void geometryMenu() {
   }
 }
 
-  double circleArea(double radius) {
+double circleArea(double radius) {
     return 3.14159 * pow(radius, 2);
-  }
+}
 
-  double rectangleArea(double length, double width) {
+double rectangleArea(double length, double width) {
     return length * width;
-  }
+}
 
-  double triangleArea(double base, double height) {
+double triangleArea(double base, double height) {
     return 0.5 * base * height;
-  }
+}
+
+void questionOne() {
+//Question 1: This program will calculate the average rainfall for three months.
+
+//variables
+string monthOne, monthTwo, monthThree;
+double rainOne, rainTwo, rainThree;
+double rainTotal;
+double rainAverage;
+
+//Give this problem the "Question 1" label.
+cout << "\nQuestion 1.\n";
+
+//Prompt the user for the months and rainfall totals
+cout << "\nEnter month: ";
+cin >> monthOne;
+cout << "Enter rainfall for " << monthOne << ": ";
+cin >> rainOne;
+cout << "Enter month: ";
+cin >> monthTwo;
+cout << "Enter rainfall for " << monthTwo << ": ";
+cin >> rainTwo;
+cout << "Enter month: ";
+cin >> monthThree;
+cout << "Enter rainfall for " << monthThree << ": ";
+cin >> rainThree;
+
+//Calculate the average rainfall for all three months.
+rainTotal = rainOne + rainTwo + rainThree;
+rainAverage =  rainTotal / 3.0;
+
+//Display the average rainfall for all three months.
+cout << "\nThe average rainfall for " << monthOne << ", " << monthTwo << ", and " << monthThree << " is " << rainAverage << " inches.\n";
+}
+
+void questionTwo() {
+//Question 2: This program will calculate the volume of a three dimensional hyperrectangle.
+
+//Variables
+double blockWidth, blockLength, blockHeight, blockVolume;
+
+//Give this problem the "Question 2" label.
+    cout << "\nQuestion 2.\n";
+
+//Prompt the user for the width, length, and height of the "block".
+
+    cout << "\nEnter the width: ";
+    cin >> blockWidth;
+    cout << "Enter the length: ";
+    cin >> blockLength;
+    cout << "Enter the height: ";
+    cin >> blockHeight;
+
+//Calculate the volume of the "block".
+    blockVolume = blockWidth * blockLength * blockHeight;
+
+//Display the "blocks" volume.
+    cout << "\nThe volume based on the numbers you have input is: " << blockVolume << " cubic inches.\n";
+} 
+
+void questionThree() {
+//Question 3: Display the roman numeral for a number input by the user.
+
+//variables
+int number;
+
+//Give this problem the "Question 3" label.
+    cout << "\nQuestion 3.\n";
+
+//Prompt the user for a number to be converted.
+    cout << "\nEnter a number (1-10): ";
+    cin >> number;
+    cout << "The Roman numeral version of " << number << " is " << numbertoRoman(number) << ".\n";
+}
+
+void questionFour() {
+//Question 4: This program will display a geometry calculator menu.
+
+//Give this problem the "Question 4" label.
+cout << "\nQuestion 4.\n";
+
+geometryMenu();
+}
+
+void questionFive() {
+//Question 5: This program is a distance traveled calculator
+
+//variables
+int speed, hours;
+
+//Give this problem the "Question 5" label.
+    cout << "\nQuestion 5.\n";
+
+//Prompt the user for the speed and the hours traveled.
+    cout << "\nWhat is the speed of the vehicle in MPH? ";
+    cin >> speed;
+    cout << "How many hours has it traveled? ";
+    cin >> hours;
+    cout << "\nHour   Distance Traveled\n";
+    cout << "--------------------------------\n";
+
+//Loop to calculate and display the distance for each hour traveled.
+    for (int hour = 1; hour <= hours; ++hour) {
+        int distance = speed * hour;
+        cout << hour << "\t\t" << distance << endl;
+    }
+}
