@@ -5,12 +5,15 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 
 //Declare functions
 string numbertoRoman(int num);
-
-
+void geometryMenu();
+double circleArea(double radius);
+double rectangleArea(double length, double width);
+double triangleArea(double base, double height);
 
 int main() {
 //Question 1: This program will calculate the average rainfall for three months.
@@ -86,6 +89,8 @@ int main() {
 
 //Question 4: This program will display a geometry calculator menu.
 
+geometryMenu();
+
 
 return 0;
 }
@@ -109,3 +114,54 @@ string numbertoRoman(int num) {
     }
     return roman;
 }
+
+void geometryMenu() {
+
+    // Write a simple menu that lets the user choose 1,2, or 3, or 4 to quit.
+    cout << "\nGeometry Calculator\n";
+    cout << "1. Calculate the Area of a Circle\n";
+    cout << "2. Calculate the Area of a Rectangle\n";
+    cout << "3. Calculate the Area of a Triangle\n";
+    cout << "4. Quit\n";
+    cout << "\nChoose: ";
+    int choice;
+    cin >> choice;
+  
+    if (1 == choice) {
+        double radius;
+        cout << "\nEnter the radius of the circle: ";
+        cin >> radius;
+        cout << "The area of the circle is: " << circleArea(radius) << endl;
+    } else if (2 == choice) {
+        double length;
+        double width;
+        cout << "\nEnter the length of the rectangle: ";
+        cin >> length;
+        cout << "Enter the width of the rectangle: ";
+        cin >> width;
+        cout << "The area of the rectangle is: " << rectangleArea(length, width) << endl;
+    } else if (3 == choice) {
+        double base;
+        double height;
+        cout << "\nEnter the base of the triangle: ";
+        cin >> base;
+        cout << "Enter the height of the triangle: ";
+        cin >> height;
+        cout << "The area of the triangle is: " << triangleArea(base, height) << endl;;
+    } else if (4 == choice) {
+        cout << "\nOk, quitting calculator\n";
+        return; // go back to main()
+  }
+}
+
+  double circleArea(double radius) {
+    return 3.14159 * pow(radius, 2);
+  }
+
+  double rectangleArea(double length, double width) {
+    return length * width;
+  }
+
+  double triangleArea(double base, double height) {
+    return 0.5 * base * height;
+  }
