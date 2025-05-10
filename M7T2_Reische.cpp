@@ -1,5 +1,5 @@
 // CSC 134
-// M7T2 - Gold
+// M7T2 - Gold/Bonus
 // Dalton Reische
 // 5/10/25
 
