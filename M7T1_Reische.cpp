@@ -33,13 +33,21 @@ class Restaurant {
     }
 
     void display() const{
-        cout << "Restaurant: " << name << ", Rating: " << rating << " stars.\n";
+        cout << "\nRestaurant: " << name << ", Rating: " << rating << " stars.\n";
     }
   
 };
 
 int main() {
     cout << "M7T1 - Restaurant Reviews" << endl;
+
+    Restaurant r1("The Black Tie", 4.2);
+    Restaurant r2("Burger Bar", 3.8);
+    Restaurant r3("Ruffs", 2.0);
+
+    r1.display();
+    r2.display();
+    r3.display();
 
     return 0;
 
