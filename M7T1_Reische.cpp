@@ -31,6 +31,10 @@ class Restaurant {
     double getRating() const {
         return rating;
     }
+
+    void display() const{
+        cout << "Restaurant: " << name << ", Rating: " << rating << " stars.\n";
+    }
   
 };
 
