@@ -33,7 +33,7 @@ class Restaurant {
     }
 
     void display() const{
-        cout << "\nRestaurant: " << name << ", Rating: " << rating << " stars.\n";
+        cout << "\nRestaurant: " << name << ", Rating: " << rating << "/5 stars.\n";
     }
   
 };
